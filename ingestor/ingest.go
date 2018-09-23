@@ -33,7 +33,7 @@ func getStationsDataResponse(body []byte) (*stationsDataResponse, error) {
 	var response = new(stationsDataResponse)
 	err := json.Unmarshal(body, &response)
 	if err != nil {
-		fmt.Printf("Error while decoding stationDataResponse: %s", err)
+		fmt.Printf("Error while decoding stationDataResponse: %s\n", err)
 	}
 
 	return response, err
